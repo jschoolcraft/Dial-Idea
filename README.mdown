@@ -1,0 +1,10 @@
+Dial Idea
+----------
+
+I'm in the [Zero To Launch](http://yearofhustle.com/) course and we're sharing ideas.  I hated writing down DFCR, so I threw together this little app.
+
+TODO
+====
+
+* Make it look less ugly
+* Show values on sliders
