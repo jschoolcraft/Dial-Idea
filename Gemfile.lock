@@ -1,5 +1,5 @@
 --- 
-hash: 781ddfdd09197b50ca76ce11fd82287be28d74b1
+hash: df3be2ca3129c194e889c39bdae3d16057eca690
 sources: 
 - Rubygems: 
     uri: http://rubygems.org
@@ -60,6 +60,8 @@ specs:
     version: 2.3.194
 - has_scope: 
     version: 0.5.0
+- hassle: 
+    version: 0.0.1
 - responders: 
     version: 0.6.0
 - inherited_resources: 
@@ -93,5 +95,9 @@ dependencies:
     - :default
   compass: 
     version: = 0.10.0.rc1
+    group: 
+    - :default
+  hassle: 
+    version: ">= 0"
     group: 
     - :default
