@@ -2,24 +2,24 @@
   <%= javascript_include_tag "idea.js", :cache => true %>
 <% end %>
 
-<%= form_for(@idea) do |f| %>
+<%= form_for(@idea, :html => { :class => "bp"}) do |f| %>
   <%= f.error_messages %>
 
   <div class="field">
     <%= f.label :title %><br />
-    <%= f.text_field :title %>
+    <%= f.text_field :title, :class => "title" %>
   </div>
   <div class="field">
     <%= f.label :description %><br />
-    <%= f.text_area :description %>
+    <%= f.text_area :description, :rows => 4 %>
   </div>
   <div class="field">
     <%= f.label :pain_reliever %><br />
-    <%= f.text_field :pain_reliever %>
+    <%= f.text_field :pain_reliever, :class => "title" %>
   </div>
   <div class="field">
     <%= f.label :money_multiplier %><br />
-    <%= f.text_field :money_multiplier %>
+    <%= f.text_field :money_multiplier, :class => "title" %>
   </div>
   <% content_for :sidebar do %>
     <div class="field">
