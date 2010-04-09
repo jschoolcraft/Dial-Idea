@@ -6,7 +6,7 @@ group :default do
   gem 'haml-edge',            :require => 'haml'
   gem 'inherited_resources'
   gem 'compass',              '0.10.0.rc1'
-  gem 'hassle'
+  gem 'hassle',               :git => "git://github.com/merbjedi/hassle.git"
 end
 
 # Use unicorn as the web server
