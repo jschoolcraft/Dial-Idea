@@ -1,10 +1,6 @@
 --- 
-hash: 5f6d943c8afd0b09ead0030610f0fc89df8a5ac6
+hash: 781ddfdd09197b50ca76ce11fd82287be28d74b1
 sources: 
-- Git: 
-    git: git://github.com/koppen/hassle.git
-    uri: git://github.com/koppen/hassle.git
-    ref: 58d670a7319c7067dc99fe16b5b3ee1e28fa2e71
 - Rubygems: 
     uri: http://rubygems.org
 specs: 
@@ -64,9 +60,6 @@ specs:
     version: 2.3.194
 - has_scope: 
     version: 0.5.0
-- hassle: 
-    version: 0.0.1
-    source: 0
 - responders: 
     version: 0.6.0
 - inherited_resources: 
@@ -100,9 +93,5 @@ dependencies:
     - :default
   compass: 
     version: = 0.10.0.rc1
-    group: 
-    - :default
-  hassle: 
-    version: ">= 0"
     group: 
     - :default
