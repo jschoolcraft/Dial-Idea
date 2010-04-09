@@ -1,10 +1,6 @@
 --- 
-hash: 8f7ac71c267e2dbccf0afa65a96f86369f7bdb82
+hash: 781ddfdd09197b50ca76ce11fd82287be28d74b1
 sources: 
-- Git: 
-    git: git://github.com/merbjedi/hassle.git
-    uri: git://github.com/merbjedi/hassle.git
-    ref: f694e0d434bcda688095d997332c06130057d796
 - Rubygems: 
     uri: http://rubygems.org
 specs: 
@@ -55,7 +51,7 @@ specs:
 - activeresource: 
     version: 3.0.0.beta2
 - bundler: 
-    version: 0.9.17
+    version: 0.9.18
 - haml: 
     version: 2.2.22
 - compass: 
@@ -64,9 +60,6 @@ specs:
     version: 2.3.194
 - has_scope: 
     version: 0.5.0
-- hassle: 
-    version: 0.0.1
-    source: 0
 - responders: 
     version: 0.6.0
 - inherited_resources: 
@@ -100,9 +93,5 @@ dependencies:
     - :default
   compass: 
     version: = 0.10.0.rc1
-    group: 
-    - :default
-  hassle: 
-    version: ">= 0"
     group: 
     - :default
