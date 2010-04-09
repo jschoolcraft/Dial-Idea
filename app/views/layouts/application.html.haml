@@ -14,6 +14,7 @@
   #container
     #header
       = yield(:title)
+      = render :partial => "shared/flash"
     #content
       = yield
     #sidebar
