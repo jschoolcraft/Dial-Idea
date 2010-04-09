@@ -1,10 +1,10 @@
 --- 
-hash: 8f7ac71c267e2dbccf0afa65a96f86369f7bdb82
+hash: 5f6d943c8afd0b09ead0030610f0fc89df8a5ac6
 sources: 
 - Git: 
-    git: git://github.com/merbjedi/hassle.git
-    uri: git://github.com/merbjedi/hassle.git
-    ref: f694e0d434bcda688095d997332c06130057d796
+    git: git://github.com/koppen/hassle.git
+    uri: git://github.com/koppen/hassle.git
+    ref: 58d670a7319c7067dc99fe16b5b3ee1e28fa2e71
 - Rubygems: 
     uri: http://rubygems.org
 specs: 

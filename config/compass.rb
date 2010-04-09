@@ -6,7 +6,7 @@ project_path = RAILS_ROOT if defined?(RAILS_ROOT)
 http_path = "/"
 css_dir = "public/stylesheets/compiled"
 sass_dir = "app/stylesheets"
-Sass::Plugin.options[:template_location] = sass_dir
 environment = Compass::AppIntegration::Rails.env
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
+Sass::Plugin.options[:template_location] = sass_dir
