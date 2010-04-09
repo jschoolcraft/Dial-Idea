@@ -11,17 +11,15 @@
 // +blueprint
 
 //Recommended Blueprint configuration with scoping and semantic layout:
-+blueprint-scaffolding("body.bp")
+//+blueprint-scaffolding("body.bp")
 body.bp
   +blueprint-typography(true)
   +blueprint-utilities
   +blueprint-debug
   +blueprint-interaction
-  // Remove the scaffolding when you're ready to start doing visual design.
-  // Or leave it in if you're happy with how blueprint looks out-of-the-box
+
 form.bp
   +blueprint-form
-  +blueprint-form-sizes($input_width = 400px, $textarea_width = 390px, $textarea_height = 125px)
 
 a.button
   +anchor-button("left")
