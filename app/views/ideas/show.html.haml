@@ -1,0 +1,35 @@
+%p
+  %strong Title:
+  = @idea.title
+
+%p
+  %strong Description:
+  = @idea.description
+
+%p
+  %strong Pain reliever:
+  = @idea.pain_reliever
+
+%p
+  %strong Money multiplier:
+  = @idea.money_multiplier
+
+%p
+  %strong Demand:
+  = @idea.demand
+
+%p
+  %strong Cost:
+  = @idea.cost
+
+%p
+  %strong Frequency:
+  = @idea.frequency
+
+%p
+  %strong Revenue:
+  = @idea.revenue
+
+= link_to 'Edit', edit_idea_path(@idea)
+|
+= link_to 'Back', ideas_path

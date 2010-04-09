@@ -1,0 +1,39 @@
+<%= form_for(@idea) do |f| %>
+  <%= f.error_messages %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :pain_reliever %><br />
+    <%= f.text_field :pain_reliever %>
+  </div>
+  <div class="field">
+    <%= f.label :money_multiplier %><br />
+    <%= f.text_field :money_multiplier %>
+  </div>
+  <div class="field">
+    <%= f.label :demand %><br />
+    <%= f.text_field :demand %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br />
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :frequency %><br />
+    <%= f.text_field :frequency %>
+  </div>
+  <div class="field">
+    <%= f.label :revenue %><br />
+    <%= f.text_field :revenue %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

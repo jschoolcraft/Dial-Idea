@@ -1,10 +1,11 @@
 source 'http://rubygems.org'
 
 group :default do
-  gem 'rails', '3.0.0.beta2'
+  gem 'rails',                '3.0.0.beta2'
   gem 'pg'
-  gem 'haml-edge', :require => 'haml'
+  gem 'haml-edge',            :require => 'haml'
   gem 'inherited_resources'
+  gem 'compass',              '0.10.0.rc1'
 end
 
 # Use unicorn as the web server

@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  pain_reliever: MyString
+  money_multiplier: MyString
+  demand: 1
+  cost: 1
+  frequency: 1
+  revenue: 1
+
+two:
+  title: MyString
+  description: MyText
+  pain_reliever: MyString
+  money_multiplier: MyString
+  demand: 1
+  cost: 1
+  frequency: 1
+  revenue: 1
