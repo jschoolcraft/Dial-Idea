@@ -21,28 +21,31 @@
     <%= f.label :money_multiplier %><br />
     <%= f.text_field :money_multiplier, :class => "title" %>
   </div>
-  <% content_for :sidebar do %>
+  <span id="sliders">
     <div class="field">
       <%= f.label :demand %><br />
       <%= f.text_field :demand, :size => 2 %>
       <div id="demand-slider" class="slider"></div>
     </div>
+    <br />
     <div class="field">
       <%= f.label :cost %><br />
       <%= f.text_field :cost, :size => 2 %>
       <div id="cost-slider" class="slider"></div>
     </div>
+    <br />
     <div class="field">
       <%= f.label :frequency %><br />
       <%= f.text_field :frequency, :size => 2 %>
       <div id="frequency-slider" class="slider"></div>
     </div>
+    <br />
     <div class="field">
       <%= f.label :revenue %><br />
       <%= f.text_field :revenue, :size => 2 %>
       <div id="revenue-slider" class="slider"></div>
     </div>
-  <% end %>
+  </span>
   <div class="actions">
     <%= f.submit %>
   </div>
