@@ -28,6 +28,8 @@
       %th.left Revenue
       %td= @idea.revenue
 
-= link_to 'Edit', edit_idea_path(@idea)
-|
-= link_to 'Back', ideas_path
+- if @idea.created_at >= 10.minutes.ago
+  %p
+    Editable for 10 minutes
+  = link_to 'Edit', edit_idea_path(@idea), :class => "button"
+= link_to 'Back', ideas_path, :class => "button"

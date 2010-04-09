@@ -4,30 +4,18 @@
 %table
   %tr
     %th Title
-    %th Description
-    %th Pain reliever
-    %th Money multiplier
-    %th Demand
-    %th Cost
-    %th Frequency
-    %th Revenue
-    %th &nbsp;
-    %th &nbsp;
-    %th &nbsp;
+    %th.center Demand
+    %th.center Cost
+    %th.center Frequency
+    %th.center Revenue
 
   - @ideas.each do |idea|
     %tr
-      %td= idea.title
-      %td= idea.description
-      %td= idea.pain_reliever
-      %td= idea.money_multiplier
-      %td= idea.demand
-      %td= idea.cost
-      %td= idea.frequency
-      %td= idea.revenue
-      %td= link_to 'Show', idea
-      %td= link_to 'Edit', edit_idea_path(idea)
-      %td= link_to 'Destroy', idea, :confirm => 'Are you sure?', :method => :delete
+      %td= link_to idea.title, idea
+      %td.center= idea.demand
+      %td.center= idea.cost
+      %td.center= idea.frequency
+      %td.center= idea.revenue
 
 %br
 
