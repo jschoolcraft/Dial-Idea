@@ -3,7 +3,8 @@
   = stylesheet_link_tag 'compiled/print.css', :media => 'print'
   /[if lt IE 8]
     = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
-
+  %script{ :type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" }
+  %script{ :type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js" }
   %title Dial Idea
   = csrf_meta_tag
 
