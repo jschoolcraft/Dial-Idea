@@ -17,22 +17,24 @@
     <%= f.label :money_multiplier %><br />
     <%= f.text_field :money_multiplier %>
   </div>
-  <div class="field">
-    <%= f.label :demand %><br />
-    <%= f.text_field :demand %>
-  </div>
-  <div class="field">
-    <%= f.label :cost %><br />
-    <%= f.text_field :cost %>
-  </div>
-  <div class="field">
-    <%= f.label :frequency %><br />
-    <%= f.text_field :frequency %>
-  </div>
-  <div class="field">
-    <%= f.label :revenue %><br />
-    <%= f.text_field :revenue %>
-  </div>
+  <% content_for :sidebar do %>
+    <div class="field">
+      <%= f.label :demand %><br />
+      <%= f.text_field :demand %>
+    </div>
+    <div class="field">
+      <%= f.label :cost %><br />
+      <%= f.text_field :cost %>
+    </div>
+    <div class="field">
+      <%= f.label :frequency %><br />
+      <%= f.text_field :frequency %>
+    </div>
+    <div class="field">
+      <%= f.label :revenue %><br />
+      <%= f.text_field :revenue %>
+    </div>
+  <% end %>
   <div class="actions">
     <%= f.submit %>
   </div>

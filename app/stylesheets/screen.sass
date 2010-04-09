@@ -6,6 +6,7 @@
 @import blueprint
 // Import the non-default scaffolding module.
 @import blueprint/scaffolding.sass
+@import blueprint/buttons.sass
 
 // To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
 // +blueprint
@@ -22,6 +23,26 @@ body.bp
 form.bp
   +blueprint-form
 
+a.button
+  +anchor-button("left")
+  +button-colors
+  +button-hover-colors
+  +button-active-colors
+  
+button
+  // The +button-button mixin is just like the +anchor-button mixin, but for <button> elements.
+  +button-button("left")
+  +button-colors
+  +button-hover-colors
+  +button-active-colors
+  
+.right
+  text-align: right
+.left
+  text-align: left
+.center
+  text-align: center
+  
 // Page layout can be done using mixins applied to your semantic classes and IDs:
 body.three-col
   #container

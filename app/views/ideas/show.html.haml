@@ -1,6 +1,5 @@
-%p
-  %strong Title:
-  = @idea.title
+- content_for :title do
+  %h1= @idea.title || "Some Idea"
 
 %p
   %strong Description:
@@ -14,21 +13,20 @@
   %strong Money multiplier:
   = @idea.money_multiplier
 
-%p
-  %strong Demand:
-  = @idea.demand
-
-%p
-  %strong Cost:
-  = @idea.cost
-
-%p
-  %strong Frequency:
-  = @idea.frequency
-
-%p
-  %strong Revenue:
-  = @idea.revenue
+- content_for :sidebar do
+  %table
+    %tr
+      %th.left Demand
+      %td= @idea.demand
+    %tr
+      %th.left Cost
+      %td= @idea.cost
+    %tr 
+      %th.left Frequency
+      %td= @idea.frequency
+    %tr
+      %th.left Revenue
+      %td= @idea.revenue
 
 = link_to 'Edit', edit_idea_path(@idea)
 |
