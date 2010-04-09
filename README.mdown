@@ -8,3 +8,9 @@ TODO
 
 * Make it look less ugly
 * Show values on sliders
+
+License
+=======
+
+Probably a DWTFYW at some point, but for now, do what the hell you want with it :)
+
