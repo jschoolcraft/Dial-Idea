@@ -1,7 +1,6 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-require 'hassle'
 
 # If you have a Gemfile, require the gems listed there, including any gems
 # you've limited to :test, :development, or :production.
@@ -40,9 +39,5 @@ module Dialidea
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters << :password
-  end
-  
-  class HassleRailtie < Rails::Railtie  
-    config.middleware.use Hassle if Rails.env == 'production'   
   end
 end
