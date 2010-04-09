@@ -5,7 +5,6 @@ group :default do
   gem 'pg'
   gem 'haml-edge', :require => 'haml'
   gem 'inherited_resources'
-  gem 'devise', '1.1.rc0'
 end
 
 # Use unicorn as the web server
