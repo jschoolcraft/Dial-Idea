@@ -1,3 +1,7 @@
+<% content_for :head do %>
+  <%= javascript_include_tag "idea.js", :cache => true %>
+<% end %>
+
 <%= form_for(@idea) do |f| %>
   <%= f.error_messages %>
 
@@ -20,19 +24,23 @@
   <% content_for :sidebar do %>
     <div class="field">
       <%= f.label :demand %><br />
-      <%= f.text_field :demand %>
+      <%= f.text_field :demand, :size => 2 %>
+      <div id="demand-slider" class="slider"></div>
     </div>
     <div class="field">
       <%= f.label :cost %><br />
-      <%= f.text_field :cost %>
+      <%= f.text_field :cost, :size => 2 %>
+      <div id="cost-slider" class="slider"></div>
     </div>
     <div class="field">
       <%= f.label :frequency %><br />
-      <%= f.text_field :frequency %>
+      <%= f.text_field :frequency, :size => 2 %>
+      <div id="frequency-slider" class="slider"></div>
     </div>
     <div class="field">
       <%= f.label :revenue %><br />
-      <%= f.text_field :revenue %>
+      <%= f.text_field :revenue, :size => 2 %>
+      <div id="revenue-slider" class="slider"></div>
     </div>
   <% end %>
   <div class="actions">
